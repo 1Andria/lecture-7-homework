@@ -1,0 +1,345 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+.container{
+    width: 1110px;
+    height:auto ;
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "daniel daniel jonathan kira"
+    "jeanette patrick patrick kira";
+    row-gap: 30px;
+    column-gap: 24px;
+    
+    
+    
+
+}
+.daniel{
+    grid-area: daniel;
+    border-radius: 8px;
+    background: #733FC8;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+    width: 540px;
+    height: 282px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    padding-right:32px;
+    padding-top: 26px;
+    
+
+
+}
+.jonathan{
+    grid-area: jonathan;
+    border-radius: 8px;
+    background: #48556A;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+    width: 255px;
+    height: 282px;
+    flex-shrink: 0;
+}
+.kira{
+    grid-area: kira;
+    border-radius: 8px;
+    background: rgb(255, 255, 255);
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+    width: 255px;
+    height: 578px;
+    flex-shrink: 0;
+}
+.jeanette{
+    grid-area: jeanette;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);  
+    width: 255px;
+    height: 266px;
+    flex-shrink: 0;
+}
+.patrick{
+    grid-area: patrick;
+    border-radius: 8px;
+    background: #19202D;
+    box-shadow: 40px 60px 50px -47px rgba(72, 85, 106, 0.25);
+    width: 540px;
+    height: 266px;
+    flex-shrink: 0;
+}
+
+.dan_heading{
+    color: #FFF;
+    font-family: "Barlow Semi Condensed";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+    width: 73px;
+    height: 13px;
+    
+}
+.dan_para{
+    color: gray;
+    font-family: "Barlow Semi Condensed";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 11px; 
+}
+.long_heading{
+    color: #FFF;
+    font-family: "Barlow Semi Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    width: 476px;
+    height: 72px;
+}
+.text{ 
+    color: #CFCFCF;
+    font-family: "Barlow Semi Condensed";
+    font-size: 12.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; 
+    margin-top: 15px;
+    
+    
+}
+.dan_photo{
+    width: 28px;
+    height: 28px;
+    
+    
+}
+.dan_hp{
+    width: 100px;
+    margin-left: 40px;
+    margin-top: -30px;
+}
+.dan_txt{
+    margin-top: 15px;
+}
+.zeda_divi{
+    display: flex;
+    margin-top: 26px;
+    margin-left: 32px;
+    gap: 17px;
+}
+.jon_photo{
+    width: 28px;
+    height: 28px;
+    border-radius: 28px;
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+
+}
+.jon_heading{
+    color: #FFF;
+    font-family: "Barlow Semi Condensed";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+}
+.jon_para{
+    color: gray;
+    font-family: "Barlow Semi Condensed";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 11px;
+}
+.jon_long_heading{
+    color: #FFF;
+    font-family: "Barlow Semi Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.jon_txt{
+    color: #CFCFCF;
+    font-family: "Barlow Semi Condensed";
+    font-size: 12.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; 
+}
+.jon{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 32px;
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-top: 19px;
+
+}
+.zevita_divi{
+    display: flex;
+    margin-left: 32px;
+    margin-top: 26px;
+    gap: 17px;
+}
+.kira_photo{
+    width: 28px;
+    height: 28px;
+}
+.kira_name{
+    color: #48556A;
+    font-family: "Barlow Semi Condensed";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+}
+.profession{
+    color: gray;
+    font-family: "Barlow Semi Condensed";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 11px;
+}
+.kira_long_heading{
+    color: #48556A;
+    font-family: "Barlow Semi Condensed";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.kira_txt{
+    color: grays;
+    font-family: "Barlow Semi Condensed";
+    font-size: 12.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+.kira_text{
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 26px;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.ze_divi{
+    display: flex;
+    gap: 17px;
+    margin-left: 32px;
+    margin-top: 26px;
+}
+.jean_photo{
+    width: 28px;
+    height: 28px;
+
+}
+.jean_name{
+    color: #48556A;
+    font-family: "Barlow Semi Condensed";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+
+}
+.jean_prof{
+    color: gray;
+    font-family: "Barlow Semi Condensed";
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 11px;
+}
+.jean_heading{
+    color: #48556A;
+    font-family: "Barlow Semi Condensed";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.jean_text{
+    color: gray;
+    font-family: "Barlow Semi Condensed";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+.jean_txt{
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 26px;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.zemo_divi{
+    display: flex;
+    gap: 17px;
+    margin-left: 32px;
+    margin-top: 26px;
+}
+.pat_photo{
+    width: 28px;
+    height: 28px;
+}
+.pat_name{
+    color: #FFF;
+    font-family: "Barlow Semi Condensed";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px; 
+}
+.pat_pro{
+    color: gray;
+    font-family: "Barlow Semi Condensed";
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 13px;
+}
+.pat_heading{
+    color: #ECF2F8;
+    font-family: "Barlow Semi Condensed";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.pat_txt{
+    color: #CFCFCF;
+    font-family: "Barlow Semi Condensed";
+    font-size: 12.5px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px; 
+}
+.pat_text{
+    margin-left: 32px;
+    margin-right: 32px;
+    margin-bottom: 26px;
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
